@@ -674,7 +674,7 @@ button {
   gap: 1rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 62px;
+  padding: 1rem 0;
 }
 .bottom-footer .container .logo {
   width: 144px;
