@@ -1,0 +1,226 @@
+.landing {
+  height: 100vh;
+  background-color: $section-color-dark;
+  background-image: url(../img/landing.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .text-landing {
+    color: $white;
+    text-align: center;
+    width: fit-content;
+    margin: 14% auto 0 auto;
+    translate: -100px 0;
+    @include maxWidth(lg) {
+      translate: unset;
+    }
+    .text-one {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: $main-color;
+    }
+    .text-two {
+      margin-bottom: 0.5rem;
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .text-three {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  background-color: $main-color;
+  .img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    right: 0;
+    top: 0;
+  }
+  .text {
+    margin-right: calc(50% + 1rem);
+    text-align: justify;
+    color: $white;
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 0.5rem;
+    }
+    .content {
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .more {
+      display: block;
+      margin-right: auto;
+      width: fit-content;
+      color: $white;
+      text-decoration: underline;
+      font-size: 16px;
+    }
+  }
+  @include maxWidth(lg) {
+    gap: 2rem;
+    .img {
+      margin-bottom: 1rem;
+      position: unset;
+      width: 500px;
+      max-width: 100%;
+    }
+    .text {
+      margin: 0;
+    }
+  }
+}
+
+.testimonials {
+  .img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    box-shadow: 2px 2px 8px 0 #0000004d;
+  }
+}
+
+.price-section {
+  background-color: $section-color-dark;
+  background-image: url(../img/price.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .box {
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    background-color: $section-color-dark;
+    border-radius: 12px;
+    border: 1px solid $main-color-dark;
+    .img {
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title {
+      opacity: 0.941;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $main-color;
+      padding: 1rem;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    .content {
+      padding: 1rem;
+      .price {
+        font-size: 40px;
+        font-weight: 800;
+        span {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .text {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+      }
+      .main-btn {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.service {
+  .box {
+    text-align: center;
+    .icon {
+      width: 105px;
+      height: 105px;
+      margin: 0.7rem auto;
+      border-radius: 50%;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      .img {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+      }
+    }
+    .title {
+      margin: 0.3rem 0;
+      font-size: 20px;
+      color: #423380;
+      font-weight: 500;
+    }
+    .text {
+      font-size: 15px;
+      line-height: 24px;
+      color: #0f0f32;
+      font-weight: 500;
+    }
+  }
+}
+
+.video-section {
+  background-color: $section-color-dark;
+  background-image: url(../img/video-section.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .video {
+    width: 100%;
+    box-shadow: 0 0 25px 4px rgb(0, 0, 0);
+    height: 430px;
+    &.video-sm {
+      height: calc(430px / 2 - (16px / 2));
+      box-shadow: unset;
+    }
+  }
+  .text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+  }
+}
+
+.imgs-section {
+  .img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 100%;
+  }
+}
+
+.inquiry-section {
+  background-color: $main-color;
+  color: #f2f7f9;
+  .content {
+    text-align: center;
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+    }
+    .text {
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+  }
+}

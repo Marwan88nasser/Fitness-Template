@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #020205 !important;
+  .logo {
+    width: 140px;
+    margin-left: 1.7rem !important;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $white !important;
+      opacity: 1 !important;
+      font-size: 17px !important;
+      padding: 8px 11px !important;
+      &.active ,&:hover{
+        color: $main-color !important;
+      }
+    }
+  }
+}

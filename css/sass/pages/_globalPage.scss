@@ -1,0 +1,21 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+    background-color: $section-color;
+    color: $text-color;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+// All Rest
+* {
+    @include all-reset;
+}
+// a Reset
+a {
+    @include a-reset;
+}
+// reset btn
+button {
+    border: none;
+    outline: none;
+}
