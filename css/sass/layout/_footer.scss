@@ -1,0 +1,39 @@
+.top-footer {
+  border-bottom:1px solid #1d1d2c ;
+  background-color: $section-color-dark;
+  color: $white;
+  .title {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .link {
+    color:$white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .icon {
+      color: $main-color;
+    }
+    &.num {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.bottom-footer {
+  background-color: $section-color-dark-2;
+  color: $white;
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 62px;
+    .logo {
+      width: 144px;
+      height: auto;
+    }
+  }
+}

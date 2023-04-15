@@ -224,3 +224,77 @@
     }
   }
 }
+
+.contact-section {
+  background-color: $section-color-dark;
+  position: relative;
+  .map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .form {
+    margin-right: calc(50% + 3rem);
+    .form-control {
+      border: 1px solid #ffffff !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      -ms-border-radius: 0 !important;
+      -o-border-radius: 0 !important;
+      color: white !important;
+      background-color: transparent !important;
+      padding: 0.6rem 1rem !important;
+      &::placeholder {
+        color: white !important;
+      }
+    }
+    textarea {
+      resize: none !important;
+      height: 98px !important;
+    }
+  }
+  @include maxWidth(lg) {
+    .map {
+      margin-bottom: 1rem;
+      position: unset;
+      height: 350px;
+      width: 100%;
+    }
+    .form {
+      margin: 0;
+    }
+  }
+}
+
+.social-section {
+  .list-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .item {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $main-color;
+      color: white;
+      font-size: 23px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+  }
+}
+
